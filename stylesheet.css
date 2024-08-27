@@ -1,10 +1,12 @@
 * {
-    background-color: 	#f6f6f6;
+   /* background-color: 	#f6f6f6; */
+   background-color: #e3e3e3;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 1.2vw;
+    /*font-size: 15px;*/
 }
 .archivo-black-regular {
     font-family: "Archivo Black", sans-serif;
@@ -29,9 +31,11 @@
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 65px;
+    font-size: 4.5vw;
+    /*font-size: 65px;*/
     color: #353935;
     padding: auto;
+
 }
 nav a {
 background-color: transparent;
@@ -53,6 +57,7 @@ background-color: transparent;
   padding-bottom: 15px;
 }
 .socials a {
+  background-color: transparent;
 text-decoration: none;
 color: #353935;
 padding:  0 2rem;
@@ -60,6 +65,7 @@ padding:  0 2rem;
   
 }
 .socials {
+  background-color: transparent;
     overflow: hidden;
     align-items: center;
     position: fixed;
@@ -69,18 +75,43 @@ padding:  0 2rem;
 }
 
 .hat {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin-top: 150px;
+  width: 50px;
+  height: fit-content;
+
+    /*display: block;
+    margin-top: 35px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
    
 }
-img {
+img .hat{
+
+  display: block;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  max-width: 100%;
+    min-width: 50%;
+    height: auto;
     transition: transform .7s ease-in-out;
   }
   img:hover {
     transform: rotate(360deg);
   }
+
+  .bio {
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .siena {
+    float: right;
+    padding: 35px;
+  max-width: 40%;
+  height: auto;
+  }
+  img .siena {
+    width: 450px;
+    height: auto;
+  }
+ 
