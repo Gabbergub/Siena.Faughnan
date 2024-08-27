@@ -1,0 +1,140 @@
+* {
+    /* background-color: 	#f6f6f6; */
+    background-color: #e3e3e3;
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: clamp(11px, 5vw, 15px);
+     /*font-size: 15px;*/
+ }
+ .archivo-black-regular {
+     font-family: "Archivo Black", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+   }
+ .nav {
+     height: 80px;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0rem calc((100vw - 1300px) / 2);
+     
+ }
+ .logo {
+     margin-top: -7%;
+     background-color: transparent;
+ }
+ .logo a {
+     background-color: transparent;
+     margin: auto;
+     letter-spacing: -3px;
+     font-family: "Archivo Black", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: clamp(40px, 5vw, 100px);
+     /*font-size: 4.5vw;
+     font-size: 65px;*/
+     color: #353935;
+     padding: auto;
+ 
+ }
+ nav a {
+ background-color: transparent;
+ text-decoration: none;
+ color: #353935;
+ padding: 0 2rem;
+ }
+ .nav-items {
+     padding-top: 15px;
+     display: grid;
+     /*margin-right: -20px;*/
+     background-color: transparent;
+ }
+ .navbar {
+ background-color: transparent; 
+   position: fixed;
+   bottom: 75px;
+   width: 100%;
+   padding-bottom: 15px;
+ }
+ .socials a {
+   background-color: transparent;
+ text-decoration: none;
+ color: #353935;
+ padding:  0 2rem;
+   
+   
+ }
+ .socials {
+   background-color: transparent;
+     overflow: hidden;
+     align-items: center;
+     position: fixed;
+   bottom: 20px;
+   justify-content: space-between;
+     
+ }
+ .bio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .siena {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 450px;
+      height: auto;
+      object-fit: contain;
+  }
+   /* padding: 35px;
+    padding-top: 30px;
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
+    object-fit: contain;
+  
+   .siena img {
+    width: 500px;
+    height: auto;
+  }*/
+
+  .flex-container {
+    column-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: auto;
+    padding-bottom: 40%;
+    margin: auto;
+    flex-direction: column;
+}
+* {
+  box-sizing: border-box;
+}
+@media (min-width: 600px) {
+  .flex-container {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+}
+@media (min-width: 600px) {
+  .siena {
+      flex: 1;
+  }
+}
+
+@media (min-width: 600px) {
+  .bio {
+      flex: 2;
+  }
+}
+@media (min-width: 600px) {
+  .navbar {
+      flex: 2;
+  }
+}
+   
