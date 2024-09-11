@@ -82,13 +82,19 @@
     padding-right: 35px;
   }
   .siena {
-    padding-left: 35px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: auto;
+    /*padding-left: 35px;
     padding-right: 35px;
-    padding-top: 20px;
+    padding-top: 20px;*/
     width: 100%;
     max-width: 450px;
       height: auto;
       object-fit: contain;
+      border-style: solid;
+      border-width: 3px;
+      border-color:#353935 ;
   }
    /* padding: 35px;
     padding-top: 30px;
