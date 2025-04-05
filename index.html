@@ -17,6 +17,40 @@
         <link rel="icon" type="image/x-icon" sizes="32x32" href="knitt round hat.png">
         <link rel="icon" type="image/x-icon" sizes="16x16" href="knitt round hat.png">
     </head>
+<script>
+  const images = document.querySelectorAll("#imageContainer img");
+  const title = document.getElementById("title");
+  const date = document.getElementById("date");
+  const about = document.getElementById("about");
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.remove("active");
+      if (i === index) {
+        img.classList.add("active");
+        title.textContent = img.dataset.title;
+        date.textContent = img.dataset.date;
+        about.textContent = img.dataset.about;
+      }
+    });
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  // Initial display
+  showImage(currentIndex);
+
+  // Auto-switch every 4 seconds
+  setInterval(nextImage, 4000);
+</script>
+
+
+    
     <body>
         <div class="fullpage">
             <section class="statement-section">
