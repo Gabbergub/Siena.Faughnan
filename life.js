@@ -97,36 +97,33 @@ document.addEventListener('DOMContentLoaded', handleScroll);
 
 
   
-  const images = document.querySelectorAll("#imageContainer img");
-  const title = document.getElementById("title");
-  const date = document.getElementById("date");
-  const about = document.getElementById("about");
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("#imageContainer img");
+    const title = document.getElementById("title");
+    const date = document.getElementById("date");
+    const about = document.getElementById("about");
 
-  let currentIndex = 0;
+    let currentIndex = 0;
 
-  function showImage(index) {
-    images.forEach((img, i) => {
-      img.classList.remove("active");
-      if (i === index) {
-        img.classList.add("active");
-        title.textContent = img.dataset.title;
-        date.textContent = img.dataset.date;
-        about.textContent = img.dataset.about;
-      }
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle("active", i === index);
+        });
+
+        const currentImg = images[index];
+        title.textContent = currentImg.dataset.title;
+        date.textContent = currentImg.dataset.date;
+        about.textContent = currentImg.dataset.about;
+    }
+
+    document.getElementById("imageContainer").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
     });
-  }
 
-  function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
+    // Initial display
     showImage(currentIndex);
-  }
-
-  // Initial display
-  showImage(currentIndex);
-
-  // Auto-switch every 4 seconds
-  setInterval(nextImage, 4000);
-
+});
 
 
 
