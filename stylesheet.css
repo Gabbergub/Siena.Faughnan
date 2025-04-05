@@ -117,7 +117,7 @@ nav a:hover,
   display: flex;
   align-items: center;
   height: auto;
-  background-color: #97ad3b;
+   background-color: #009C3B;
 }
 p.content {
    color: #EFD033;
@@ -128,10 +128,10 @@ p.content {
   padding-right: 40px;
 }
 #content {
-    background-color: #97ad3b;
+     background-color: #009C3B;
 }
 .container {
-   background-color: #97ad3b;
+    background-color: #009C3B;
   margin-top: -90px;
   display: flex;
   overflow-x: auto;
@@ -147,7 +147,7 @@ p.content {
   scrollbar-width: none;
 }
 .container img {
-   background-color: #97ad3b;
+    background-color: #009C3B;
   flex: 0 0 auto;
   margin: 10px;
   scroll-snap-align: center;
@@ -158,16 +158,17 @@ p.content {
  p #title {
     font-family: 'Baskervville';
     font-size: 18; 
+     background-color: #009C3B;
  }
 .p {
-   background-color: #97ad3b;
+   background-color: #009C3B;
 }
 
 
 
 
 .overlay-gallery {
-background-color: #97ad3b;
+background-color: #009C3B;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -180,9 +181,10 @@ background-color: #97ad3b;
   scroll-snap-align: start;
   position: sticky;
   top: 0;
-   background-color: #97ad3b;
+   background-color: #009C3B;
     scroll-snap-align: start;
-  z-index: 5;
+  z-index: 2;
+   box-sizing: border-box;
 }
 
 .statement-section {
