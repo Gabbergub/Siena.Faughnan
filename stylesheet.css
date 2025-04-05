@@ -252,10 +252,7 @@ nav a:hover,
 
 
 
-#imageContainer img {
-  display: none;
-  max-width: 100%;
-}
+
 #imageContainer img.active {
   display: block;
 }
