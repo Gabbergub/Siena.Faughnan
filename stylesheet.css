@@ -142,6 +142,7 @@ nav a:hover,
   scrollbar-width: none;
 }
 .container img {
+   background-color: #97ad3b;
   flex: 0 0 auto;
   margin: 10px;
   scroll-snap-align: center;
@@ -154,7 +155,7 @@ nav a:hover,
 
 
 .fullpage {
-  
+  background-color: transparent;
   z-index: 10;
   height: 200vh; /* two full screens stacked */
   overflow-y: scroll;
@@ -181,7 +182,6 @@ nav a:hover,
   align-items: flex-start;
   justify-content: flex-start;
    background-color: #e3e3e3;
-  
   padding: 20px;
 }
 
@@ -189,7 +189,6 @@ nav a:hover,
    font-family: 'Baskervville';
    font-size: clamp(28px, 5vw, 50px);
    font-style: italic;
-   font-weight: bold;
   max-width: 700px;
   line-height: 1.6;
    color: #97ad3b;
@@ -212,8 +211,8 @@ background-color: #97ad3b;
   position:absolute;
   bottom: 20px;
   right: 40px;
-  /*background-color: transparent;*/
-   background-color: #97ad3b;
+  background-color: transparent;
+   
   color: #353935;
   font-size: 14px;
   opacity: 1;
