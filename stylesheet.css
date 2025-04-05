@@ -160,11 +160,17 @@ nav a:hover,
   scroll-snap-type: y mandatory;
 }
 
-.statement-section,
+
 .overlay-gallery {
   height: 100vh;
-  width: 100vw;
+  width: 95vw;
   scroll-snap-align: start;
+  position: relative;
+}
+
+.statement-section {
+  height: 100vh;
+  width:100vw;
   position: relative;
 }
 
@@ -174,7 +180,7 @@ nav a:hover,
   justify-content: flex-start;
    background-color: #97ad3b;
   /*background-color: #e3e3e3;*/
-  color: #e3e3e3;
+  
   padding: 20px;
 }
 
@@ -182,6 +188,8 @@ nav a:hover,
   max-width: 500px;
   font-size: 3.3 rem;
   line-height: 1.6;
+   color: #e3e3e3;
+   background-color: transparent;
 }
 
 .overlay-gallery {
@@ -199,7 +207,7 @@ nav a:hover,
   position:absolute;
   bottom: 20px;
   right: 40px;
-  background-color: none;
+  background-color: transparent;
   color: #353935;
   font-size: 14px;
   opacity: 1;
