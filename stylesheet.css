@@ -158,13 +158,13 @@ nav a:hover,
 
 
 
-.fullpage {
+/*.fullpage {
   background-color: transparent;
   z-index: 10;
   height: 200vh; /* two full screens stacked */
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-}
+}*/
 .overlay-gallery {
 background-color: #97ad3b;
   overflow: hidden;
