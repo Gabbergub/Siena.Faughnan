@@ -119,7 +119,7 @@ nav a:hover,
   height: auto;
   background-color: #97ad3b;
 }
-.content {
+p.content {
    color: #EFD033;
    background-color: transparent;
   width: 300px;
@@ -155,7 +155,7 @@ nav a:hover,
 .container::-webkit-scrollbar {
   display: none;
 }
- #title .p {
+ p #title {
     font-family: 'Baskervville';
     font-size: 18; 
  }
@@ -182,14 +182,14 @@ background-color: #97ad3b;
   top: 0;
    background-color: #97ad3b;
     scroll-snap-align: start;
-  z-index: 2;
+  z-index: 5;
 }
 
 .statement-section {
   height: 100vh;
   width:100vw;
   position: relative;
-   z-index: 10;
+   z-index: 1;
 }
 
 .statement-section {
