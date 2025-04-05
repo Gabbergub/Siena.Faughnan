@@ -1,13 +1,15 @@
 * {
-   /* background-color: 	#f6f6f6; */
+
    background-color: #e3e3e3;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: clamp(11px, 5vw, 15px);
-    /*font-size: 15px;*/
+
+  scroll-behavior: smooth;
 }
+
 .archivo-black-regular {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -32,8 +34,6 @@
     font-weight: 400;
     font-style: normal;
     font-size: clamp(40px, 5vw, 100px);
-    /*font-size: 4.5vw;
-    font-size: 65px;*/
     color: #353935;
     padding: auto;
 
@@ -47,10 +47,11 @@ padding: 0 2rem;
 .nav-items {
     padding-top: 15px;
     display: grid;
-    /*margin-right: -20px;*/
+   
     background-color: transparent;
 }
 .navbar {
+  z-index: 10;
 background-color: transparent; 
   position: fixed;
   bottom: 75px;
@@ -72,13 +73,22 @@ padding:  0 2rem;
     position: fixed;
   bottom: 20px;
   justify-content: space-between;
-    
+  z-index: 10;
 }
 
+/*.statement {
+  max-width: 400px;
+  padding: 40px;
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}*/
 
 
 .hat, .grail, .tall, .rec, .end {
-  width: 100%;
+  width: auto;
   height: auto;
   object-fit: contain;
 }
@@ -124,3 +134,62 @@ padding:  0 2rem;
 }
  
 
+
+
+.fullpage {
+  height: 200vh; /* two full screens stacked */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.statement-section,
+.overlay-gallery {
+  height: 100vh;
+  width: 95vw;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.statement-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #e3e3e3;
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.statement {
+  max-width: 500px;
+  font-size: 3.3 rem;
+  line-height: 1.6;
+}
+
+.overlay-gallery {
+  position: sticky;
+  top: 0;
+  background-color: #e3e3e3;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll {
+  position:absolute;
+  bottom: 20px;
+  right: 40px;
+  background-color: transparent;
+  color: #353935;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* Hide on screens smaller than ~600px (typical phone width) */
+@media screen and (max-width: 600px) {
+  .scroll {
+    display: none;
+  }
+}

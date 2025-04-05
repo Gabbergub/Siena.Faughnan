@@ -77,8 +77,8 @@
  .bio {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
-    padding-left: 35px;
+    padding-top: 30px;
+    padding-left: 30px;
     padding-right: 35px;
     padding-bottom: 40px;
   }
