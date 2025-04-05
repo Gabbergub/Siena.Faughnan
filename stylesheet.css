@@ -177,7 +177,7 @@ background-color: #97ad3b;
   height: 100vh;
   width: 95vw;
   scroll-snap-align: start;
-  position: sticky;
+  position: fixed;
   top: 0;
    background-color: #97ad3b;
     scroll-snap-align: start;
