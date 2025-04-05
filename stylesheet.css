@@ -174,7 +174,7 @@ nav a:hover,
   justify-content: flex-start;
    background-color: #97ad3b;
   /*background-color: #e3e3e3;*/
-  color: transparent;
+  color: #e3e3e3;
   padding: 20px;
 }
 
@@ -199,7 +199,7 @@ nav a:hover,
   position:absolute;
   bottom: 20px;
   right: 40px;
-  background-color: transparent;
+  background-color: none;
   color: #353935;
   font-size: 14px;
   opacity: 1;
