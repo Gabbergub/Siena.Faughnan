@@ -75,6 +75,8 @@
      
  }
  .bio {
+     font-family: 'Baskervville';
+     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
