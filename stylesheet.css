@@ -117,7 +117,7 @@ nav a:hover,
   display: flex;
   align-items: center;
   height: auto;
-   background-color: #669900;
+   background-color: #9966CC;
 }
 p.content {
    color: #EFD033;
@@ -128,10 +128,10 @@ p.content {
   padding-right: 40px;
 }
 #content {
-     background-color:#669900;
+     background-color:#9966CC;
 }
 .container {
-    background-color: #669900;
+    background-color: #9966CC;
   margin-top: -90px;
   display: flex;
   overflow-x: auto;
@@ -147,7 +147,7 @@ p.content {
   scrollbar-width: none;
 }
 .container img {
-    background-color: #669900;
+    background-color: #9966CC;
   flex: 0 0 auto;
   margin: 10px;
   scroll-snap-align: center;
@@ -168,7 +168,7 @@ p.content {
 
 
 .overlay-gallery {
-background-color:#669900;
+background-color:#9966CC;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -181,7 +181,7 @@ background-color:#669900;
   scroll-snap-align: start;
   position: sticky;
   top: 0;
-   background-color: #669900;
+   background-color: #9966CC;
     scroll-snap-align: start;
   z-index: 2;
    box-sizing: border-box;
