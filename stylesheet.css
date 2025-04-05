@@ -184,6 +184,8 @@ nav a:hover,
 }
 
 .statement {
+   font-family: 'Baskervville';
+   font-size: 35px;
   max-width: 500px;
   font-size: 3.3 rem;
   line-height: 1.6;
