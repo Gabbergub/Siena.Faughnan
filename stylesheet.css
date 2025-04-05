@@ -251,7 +251,9 @@ nav a:hover,
 }
 
 
-
+#imageContainer img {
+  display: none;
+}
 
 #imageContainer img.active {
   display: block;
