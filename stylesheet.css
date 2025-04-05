@@ -126,6 +126,7 @@ nav a:hover,
   padding-right: 40px;
 }
 .container {
+   background-color: #97ad3b;
   margin-top: -90px;
   display: flex;
   overflow-x: auto;
@@ -186,11 +187,10 @@ nav a:hover,
 
 .statement {
    font-family: 'Baskervville';
-   font-size: 35px;
+   font-size: clamp(28px, 5vw, 50px);
    font-style: italic;
    font-weight: bold;
   max-width: 700px;
-  font-size: 3.3 rem;
   line-height: 1.6;
    color: #97ad3b;
    background-color: transparent;
@@ -212,7 +212,8 @@ background-color: #97ad3b;
   position:absolute;
   bottom: 20px;
   right: 40px;
-  background-color: transparent;
+  /*background-color: transparent;*/
+   background-color: #97ad3b;
   color: #353935;
   font-size: 14px;
   opacity: 1;
