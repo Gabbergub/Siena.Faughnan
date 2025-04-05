@@ -153,7 +153,7 @@ nav a:hover,
 
 
 .fullpage {
-  background-color: #97ad3b;
+  
   z-index: 10;
   height: 200vh; /* two full screens stacked */
   overflow-y: scroll;
@@ -172,8 +172,9 @@ nav a:hover,
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #e3e3e3;
-  color: #97ad3b;
+   background-color: #97ad3b;
+  /*background-color: #e3e3e3;*/
+  color: #e3e3e3;
   padding: 20px;
 }
 
