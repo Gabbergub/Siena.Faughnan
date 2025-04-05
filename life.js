@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', handleScroll);
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll("#imageContainer img");
+    const images = document.querySelectorAll("img");
     const title = document.getElementById("title");
     const date = document.getElementById("date");
     const about = document.getElementById("about");
