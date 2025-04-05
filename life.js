@@ -83,7 +83,10 @@ window.addEventListener('scroll', handleScroll);
 document.addEventListener('DOMContentLoaded', handleScroll);
 
 
------------------------
+
+
+
+
 
     document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll("#imageContainer img");
