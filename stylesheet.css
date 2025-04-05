@@ -121,7 +121,7 @@ nav a:hover,
 }
 .content {
    color: #EFD033;
-   background-color: #97ad3b;
+   background-color: transparent;
   width: 300px;
   height: 300px;
   padding-left: 25px;
@@ -170,7 +170,7 @@ background-color: #97ad3b;
 
 .overlay-gallery {
   height: 100vh;
-  width: 95vw;
+  width: 100vw;
   scroll-snap-align: start;
   position: sticky;
   top: 0;
@@ -183,7 +183,7 @@ background-color: #97ad3b;
   height: 100vh;
   width:100vw;
   position: relative;
-   z-index: 1;
+   z-index: 10;
 }
 
 .statement-section {
