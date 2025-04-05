@@ -178,8 +178,7 @@ nav a:hover,
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-   background-color: #97ad3b;
-  /*background-color: #e3e3e3;*/
+   background-color: #e3e3e3;
   
   padding: 20px;
 }
@@ -188,14 +187,15 @@ nav a:hover,
   max-width: 500px;
   font-size: 3.3 rem;
   line-height: 1.6;
-   color: #e3e3e3;
+   color: #97ad3b;
    background-color: transparent;
 }
 
 .overlay-gallery {
   position: sticky;
   top: 0;
-  background-color: #e3e3e3;
+background-color: #97ad3b;
+  
   z-index: 10;
   overflow: hidden;
   display: flex;
