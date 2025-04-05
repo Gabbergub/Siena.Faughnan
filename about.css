@@ -42,7 +42,7 @@
  background-color: transparent;
  text-decoration: none;
  color: #353935;
- padding: 0 2rem;
+ padding: 0 1.6rem;
  }
  .nav-items {
      padding-top: 15px;
@@ -61,7 +61,7 @@
    background-color: transparent;
  text-decoration: none;
  color: #353935;
- padding:  0 2rem;
+ padding: 0 1.6rem;
    
    
  }
@@ -77,8 +77,8 @@
  .bio {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
     padding-right: 35px;
     padding-bottom: 40px;
   }
@@ -145,3 +145,17 @@
   }
 }
    
+
+nav a, .logo a, .socials a {
+  text-decoration: none;
+  color: #353935;
+  transition: color 0.3s ease;
+  background-color: transparent;
+}
+
+/* Hover effect */
+nav a:hover,
+.logo a:hover,
+.socials a:hover {
+  color: #97ad3b; /* Change this color if you'd like something else */
+}

@@ -41,3 +41,43 @@ container.addEventListener("scroll", () => {
 window.addEventListener("load", () => {
     updateContent(getClosestImageToCenter());
 });
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+    const scrollElement = document.querySelector('.scroll');
+    if (window.scrollY > 50) {  // Adjust this value as needed
+        scrollElement.classList.add('hidden');
+    } else {
+        scrollElement.classList.remove('hidden');
+    }
+});
+
+
+
+
+
+// Function to detect if an element is in the viewport (fade-in)
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+}
+
+// Function to add the 'visible' class to elements when they come into view
+function handleScroll() {
+    const sections = document.querySelectorAll('.overlay-gallery');
+    sections.forEach((section) => {
+        if (isElementInViewport(section)) {
+            section.classList.add('visible');
+        }
+    });
+}
+
+// Call handleScroll on scroll
+window.addEventListener('scroll', handleScroll);
+
+// Also call handleScroll once when the page loads to show elements already in view
+document.addEventListener('DOMContentLoaded', handleScroll);

@@ -42,7 +42,7 @@ nav a {
 background-color: transparent;
 text-decoration: none;
 color: #353935;
-padding: 0 2rem;
+padding: 0 1.6rem;
 }
 .nav-items {
     padding-top: 15px;
@@ -62,10 +62,12 @@ background-color: transparent;
   background-color: transparent;
 text-decoration: none;
 color: #353935;
-padding:  0 2rem;
-  
-  
+padding: 0 1.6rem;
+
+/*padding: 0 1rem;*/
 }
+
+
 .socials {
   background-color: transparent;
     overflow: hidden;
@@ -76,6 +78,19 @@ padding:  0 2rem;
   z-index: 10;
 }
 
+nav a, .logo a, .socials a {
+  text-decoration: none;
+  color: #353935;
+  transition: color 0.3s ease;
+  background-color: transparent;
+}
+
+/* Hover effect */
+nav a:hover,
+.logo a:hover,
+.socials a:hover {
+  color: #97ad3b; /* Change this color if you'd like something else */
+}
 /*.statement {
   max-width: 400px;
   padding: 40px;
@@ -102,11 +117,12 @@ padding:  0 2rem;
   display: flex;
   align-items: center;
   height: auto;
+  
 }
 .content {
   width: 300px;
   height: 300px;
-  padding-left: 40px;
+  padding-left: 25px;
   padding-right: 40px;
 }
 .container {
@@ -137,6 +153,7 @@ padding:  0 2rem;
 
 
 .fullpage {
+  z-index: 10;
   height: 200vh; /* two full screens stacked */
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -155,9 +172,8 @@ padding:  0 2rem;
   align-items: flex-start;
   justify-content: flex-start;
   background-color: #e3e3e3;
-  color: white;
-  padding-top: 30px;
-  padding-left: 30px;
+  color: #97ad3b;
+  padding: 20px;
 }
 
 .statement {
@@ -174,6 +190,7 @@ padding:  0 2rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .scroll {
@@ -183,7 +200,8 @@ padding:  0 2rem;
   background-color: transparent;
   color: #353935;
   font-size: 14px;
-  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
   z-index: 1000;
 }
 
@@ -191,5 +209,43 @@ padding:  0 2rem;
 @media screen and (max-width: 600px) {
   .scroll {
     display: none;
+  }
+}
+
+.scroll.hidden {
+  opacity: 0;
+}
+
+
+
+
+
+
+/* Initial hidden state for all elements (fade in)*/
+.overlay-gallery{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.overlay-gallery.visible {
+  opacity: 1;
+}
+
+
+
+
+
+/* Target smaller screens like iPhone and adjust layout */
+@media only screen and (max-width: 600px) {
+  .container img {
+    width: 300px; /* On smaller screens, make each image take up 100% of the width */
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Adjust the layout for a more compact gallery */
+  .container {
+    display:flexbox; /* Stack images vertically on small screens */
+    
   }
 }
