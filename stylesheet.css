@@ -155,16 +155,16 @@ p.content {
 .container::-webkit-scrollbar {
   display: none;
 }
- p #title {
-    font-family: 'Baskervville';
-    font-size: 18; 
-     background-color: #009C3B;
- }
-.p {
-   background-color: #009C3B;
+
+
+
+.fullpage {
+  background-color: transparent;
+  z-index: 10;
+  height: 200vh; /* two full screens stacked */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
-
-
 
 
 .overlay-gallery {
