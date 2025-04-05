@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', handleScroll);
 
 
 
-  
+/*  
 document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll("#imageContainer img");
     const title = document.getElementById("title");
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial display
     showImage(currentIndex);
 });
-
+*/
 
 
 
