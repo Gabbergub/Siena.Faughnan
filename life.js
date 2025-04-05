@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', handleScroll);
 
 
 
-  <script>
+  
   const images = document.querySelectorAll("#imageContainer img");
   const title = document.getElementById("title");
   const date = document.getElementById("date");
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', handleScroll);
 
   // Auto-switch every 4 seconds
   setInterval(nextImage, 4000);
-</script>
+
 
 
 
