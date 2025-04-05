@@ -81,3 +81,33 @@ window.addEventListener('scroll', handleScroll);
 
 // Also call handleScroll once when the page loads to show elements already in view
 document.addEventListener('DOMContentLoaded', handleScroll);
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("#imageContainer img");
+    const title = document.getElementById("title");
+    const date = document.getElementById("date");
+    const about = document.getElementById("about");
+
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle("active", i === index);
+        });
+
+        const currentImg = images[index];
+        title.textContent = currentImg.dataset.title;
+        date.textContent = currentImg.dataset.date;
+        about.textContent = currentImg.dataset.about;
+    }
+
+    document.getElementById("imageContainer").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
+
+    // Initial display
+    showImage(currentIndex);
+});
