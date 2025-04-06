@@ -21,22 +21,22 @@
      
  }
  .logo {
-     margin-top: -7%;
-     background-color: transparent;
- }
+  /*margin-top: -7%;*/
+  background-color: transparent;
+}
  .logo a {
-     background-color: transparent;
-     margin: auto;
-     letter-spacing: -3px;
-     font-family: "Archivo Black", sans-serif;
-     font-weight: 400;
-     font-style: normal;
-     font-size: clamp(40px, 5vw, 100px);
+  background-color: transparent;
+  /*margin: auto;*/
+  letter-spacing: -3px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(40px, 5vw, 30px);
      /*font-size: 4.5vw;
      font-size: 65px;*/
      color: #353935;
      padding: auto;
- 
+     /*padding: auto;*/
  }
  nav a {
  background-color: transparent;
@@ -47,15 +47,18 @@
  .nav-items {
      padding-top: 15px;
      display: grid;
+     padding: auto;
      /*margin-right: -20px;*/
      background-color: transparent;
  }
  .navbar {
- background-color: transparent; 
-   position: fixed;
-   bottom: 75px;
-   width: 100%;
-   padding-bottom: 15px;
+  z-index: 10;
+  background-color: transparent; 
+    position: fixed;
+    top: 20px;
+    /*bottom: 75px;*/
+    width: 100%;
+    padding-bottom: 15px;
  }
  .socials a {
    background-color: transparent;
@@ -72,9 +75,10 @@
      position: fixed;
    bottom: 20px;
    justify-content: space-between;
-     
+   z-index: 10;
  }
  .bio {
+  margin-top: 200px;
      font-family: 'Baskervville';
      font-size: 15px;
     display: flex;

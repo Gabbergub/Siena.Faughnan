@@ -1,10 +1,10 @@
 * {
-
-   background-color: #e3e3e3;
+  
+   /*background-color: #e3e3e3;*/
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Baskerville';
     font-size: clamp(11px, 5vw, 15px);
 
   scroll-behavior: smooth;
@@ -23,19 +23,19 @@
     
 }
 .logo {
-    margin-top: -7%;
+    /*margin-top: -7%;*/
     background-color: transparent;
 }
 .logo a {
     background-color: transparent;
-    margin: auto;
+    /*margin: auto;*/
     letter-spacing: -3px;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(40px, 5vw, 100px);
+    font-size: clamp(40px, 5vw, 30px);
     color: #353935;
-    padding: auto;
+    /*padding: auto;*/
 
 }
 nav a {
@@ -45,16 +45,21 @@ color: #353935;
 padding: 0 1.6rem;
 }
 .nav-items {
-    padding-top: 15px;
+ 
+    padding-top: -15px;
+    padding: auto;
     display: grid;
-   
     background-color: transparent;
+}
+.nav {
+  font-family: 'Baskerville';
 }
 .navbar {
   z-index: 10;
 background-color: transparent; 
   position: fixed;
-  bottom: 75px;
+  top: 20px;
+  /*bottom: 75px;*/
   width: 100%;
   padding-bottom: 15px;
 }
@@ -102,13 +107,14 @@ nav a:hover,
 }*/
 
 
-.hat, .grail, .tall, .rec, .end {
+.hat, .grail, .tall, .rec, .end, .dad {
   width: auto;
   height: auto;
   object-fit: contain;
 }
 .hat { max-width: 500px; }
 .grail { max-width: 800px; }
+.dad { max-width: 450px; }
 .tall { max-width: 500px; }
 .rec { max-width: 700px; }
 .end { max-width: 700px; }
@@ -117,21 +123,20 @@ nav a:hover,
   display: flex;
   align-items: center;
   height: auto;
-   background-color: #9966CC;
+   /*background-color: #9966CC;*/
 }
-p.content {
-   color: #EFD033;
+.content {
    background-color: transparent;
   width: 300px;
   height: 300px;
   padding-left: 25px;
   padding-right: 40px;
 }
-#content {
+/*#content {
      background-color:#9966CC;
-}
+}*/
 .container {
-    background-color: #9966CC;
+    
   margin-top: -90px;
   display: flex;
   overflow-x: auto;
@@ -147,7 +152,7 @@ p.content {
   scrollbar-width: none;
 }
 .container img {
-    background-color: #9966CC;
+    
   flex: 0 0 auto;
   margin: 10px;
   scroll-snap-align: center;
@@ -166,24 +171,35 @@ p.content {
   scroll-snap-type: y mandatory;
 }
 
+.linebar {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #353935;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  margin-top: 15px;
+  position: relative;
+  z-index: 10;
+}
 
 .overlay-gallery {
-background-color:#9966CC;
+
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .overlay-gallery {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
-  position: sticky;
+  position: fixed;
   top: 0;
-   background-color: #9966CC;
+   background-color: none;
     scroll-snap-align: start;
-  z-index: 2;
+  z-index: 5;
    box-sizing: border-box;
 }
 
@@ -191,24 +207,42 @@ background-color:#9966CC;
   height: 100vh;
   width:100vw;
   position: relative;
-   z-index: 1;
+   z-index: 10;
 }
 
 .statement-section {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-   background-color: #e3e3e3;
+  background-color: #97ad3b;
   padding: 20px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*background-image: url("Grail_Cropped.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;*/
 }
 
 .statement {
+ 
+ /* margin-top: 200px;*/
    font-family: 'Baskervville';
-   font-size: clamp(28px, 5vw, 50px);
+   font-size: clamp(20px, 5vw, 40px);
    font-style: italic;
   max-width: 900px;
   line-height: 1.6;
-   color: #97ad3b;
+   color: white;
+   /*text-shadow: 1px 1px gray;*/
    background-color: transparent;
 }
 
