@@ -39,30 +39,27 @@
 
 }
 nav a {
-background-color: transparent;
-text-decoration: none;
-color: #353935;
-padding: 0 1.6rem;
-}
-.nav-items {
- 
-    padding-top: -15px;
-    padding: auto;
-    display: grid;
-    background-color: transparent;
-}
-.nav {
-  font-family: 'Baskerville';
-}
-.navbar {
-  z-index: 10;
-background-color: transparent; 
-  position: fixed;
-  top: 20px;
-  /*bottom: 75px;*/
-  width: 100%;
-  padding-bottom: 15px;
-}
+  background-color: transparent;
+  text-decoration: none;
+  color: #353935;
+  padding: 0 1.6rem;
+  }
+  .nav-items {
+      padding-top: 15px;
+      display: grid;
+      padding: auto;
+      /*margin-right: -20px;*/
+      background-color: transparent;
+  }
+  .navbar {
+   z-index: 10;
+   background-color: transparent; 
+     position: fixed;
+     top: 20px;
+     /*bottom: 75px;*/
+     width: 100%;
+     padding-bottom: 15px;
+  }
 .socials a {
   background-color: transparent;
 text-decoration: none;
