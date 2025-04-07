@@ -186,13 +186,13 @@ nav a:hover,
 
 
 
-.fullpage {
+/*.fullpage {
   background-color: transparent;
   z-index: 10;
-  height: 200vh; /* two full screens stacked */
+  height: 200vh; 
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-}
+}*/
 
 .linebar {
   outline-style: solid;
@@ -216,30 +216,34 @@ nav a:hover,
 
 .overlay-gallery {
   height: 100vh;
-  width: 100vw;
+  width: 93vw;
   scroll-snap-align: start;
-  position: relative;
+  
   top: 0;
    background-color: none;
     scroll-snap-align: start;
-  z-index: 5;
+ 
    box-sizing: border-box;
+   position: relative;
+   z-index: 5;
 }
 
 .statement-section {
   height: 100vh;
   width:100vw;
-  position: relative;
-   z-index: 10;
+  
 }
-
+.section-two{
+  position: fixed;
+  z-index: 10;
+}
 .statement-section {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   background-color: #97ad3b;
   padding: 20px;
-
+position: relative;
   align-items: center;
   justify-content: center;
   text-align: center;
