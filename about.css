@@ -98,11 +98,14 @@
  /* margin-top: 200px;*/
  color: #353935;
  margin-top: 150px;
-     font-family: 'Baskervville';
-     font-size: clamp(18px, 2vw, 30px);
+ font-family: "nimbus-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+     /*font-family: 'Baskervville';*/
+     font-size: clamp(18px, 2vw, 20px);
      line-height: 1.3;
-     font-style: italic;
-   /* display: flex;
+    /* font-style: italic;
+    display: flex;
     flex-wrap: wrap;*/
     padding-top: 20px;
     padding-left: 20px;
@@ -113,7 +116,7 @@
   .siena {
    /* margin-right: 0px;
     margin-left: 0px;*/
-    margin-top: -250px;
+    margin-top: -150px;
     padding: 20px;
     width: 100%;
     max-width: 400px;
@@ -145,7 +148,8 @@
     font-weight: 400;
     font-style: normal;
     font-size: clamp(9px, 2vw, 15px);
-    color: #97ad3b;
+    color: #A9A9A9;
+   /* color: #97ad3b;*/
     padding: 1rem;
     max-width: 400px;
   }

@@ -126,7 +126,7 @@ nav a:hover,
 }*/
 
 
-.hat, .grail, .tall, .rec, .end, .dad {
+.hat, .grail, .tall, .rec, .end, .dad, .paint {
   width: auto;
   height: auto;
   object-fit: contain;
@@ -137,7 +137,13 @@ nav a:hover,
 .tall { max-width: 500px; }
 .rec { max-width: 700px; }
 .end { max-width: 700px; }
+.paint { max-width: 550px; }
 
+img {
+  width: 150px;
+  -webkit-filter: drop-shadow(3.5px 3.5px 3.5px #222);
+  filter: drop-shadow(3.5px 3.5px 3.5px #222);
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -194,7 +200,7 @@ nav a:hover,
   scroll-snap-type: y mandatory;
 }*/
 
-.linebar {
+/*.linebar {
   outline-style: solid;
   outline-width: 0.1px;
   outline-color: #353935;
@@ -202,6 +208,16 @@ nav a:hover,
   margin: auto;
   padding: 0;
   margin-top: 15px;
+  position: relative;
+  z-index: 10;
+}*/
+.linebar {
+  outline-style: solid;
+  outline-width: 0.1px;
+  outline-color: #353935;
+  width: 100%;              /* Reduced width for centering effect */
+  margin: 10px auto 0;     /* Top margin, auto left/right */
+  padding: 0;
   position: relative;
   z-index: 10;
 }
@@ -275,9 +291,8 @@ position: relative;
 
 .names {
   font-family: 'Baskervville';
-   font-size: clamp(20px, 5vw, 40px);
-   padding: 20px;
- 
+   font-size: clamp(20px, 5vw, 35px);
+   padding: 5px;
    align-items: center;
    justify-content: center;
    text-align: center;
